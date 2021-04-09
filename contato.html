@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/form.css">
+    <script src="scripts/form.js"></script>
 </head>
 <body>
     <header>
@@ -25,20 +26,20 @@
         <h1> Formulário de Contato </h1>
         <hr>
 
-        <form action="">
+        <form method="post">
             <fieldset>
-                <label for="cpf">CPF:</label>
-                <input name="cpf" type="text" placeholder="Ex: 123.456.789-00">
+                <label for="cpf">CPF*:</label>
+                <input name="cpf" type="text" placeholder="Ex: 123.456.789-00" required>
             </fieldset>
             
             <fieldset>
-                <label for="nome">Nome:</label>
-                <input name="nome" type="text" placeholder="Ex: Roberto Saldanha">
+                <label for="nome">Nome*:</label>
+                <input name="nome" type="text" placeholder="Ex: Roberto Saldanha" required>
             </fieldset>
             
             <fieldset>
-                <label for="email">Email:</label>
-                <input name="email" type="text" placeholder="Ex: vitinho@gmail.com">
+                <label for="email">Email*:</label>
+                <input name="email" type="text" placeholder="Ex: vitinho@gmail.com" required>
             </fieldset>
             
             <fieldset>
@@ -49,6 +50,7 @@
             <fieldset>
                 <label for="cidade">Cidade:</label>
                 <select name="cidade">
+                    <option value="">Escolha uma cidade</option>
                     <option value="pa">Porto Alegre</option>
                     <option value="os">Osório</option>
                     <option value="fl">Florioanópolis</option>
@@ -60,6 +62,7 @@
             <fieldset>
                 <label for="uf">Estado:</label>
                 <select name="uf">
+                    <option value="">Escolha um estado</option>
                     <option value="rs">Rio Grande do Sul</option>
                     <option value="sc">Santa Catarina</option>
                     <option value="pr">Paraná</option>
@@ -72,7 +75,7 @@
             </fieldset>
             
             <fieldset>
-                <label>Sexo:</label>
+                <label>Sexo*:</label>
 
                 <input id="masc" name="sexo" type="radio">
                 <label for="masc">Masculino</label>
@@ -85,18 +88,20 @@
             </fieldset>
             
             <fieldset>
-                <label for="motivo">Motivo do Contato:</label>
+                <label for="motivo">Motivo do Contato*:</label>
                 <select name="motivo">
+                    <option value="outro">Outro</option>
                     <option value="duvida">Dúvida</option>
                     <option value="elogio">Elogio</option>
-                    <option value="outro">Outro</option>
                 </select>
             </fieldset>
             
             <fieldset>
-                <label for="motivoExplicacao">Motivo:</label>
-                <textarea name="motivoExplicacao" maxlength="300" placeholder="Motivo do contato"></textarea>
+                <label for="motivo-texto">Motivo*:</label>
+                <textarea name="motivo-texto" maxlength="300" placeholder="Motivo do contato" required></textarea>
             </fieldset>
+
+            <button type="submit" onclick="validateForm(this.form)"> Enviar </button>
         </form>
     </main>
 </body>
