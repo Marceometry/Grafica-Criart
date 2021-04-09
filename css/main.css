@@ -80,3 +80,8 @@ footer img {
     width: 16px;
     transform: translateY(2px);
 }
+
+footer.loginPageFooter {
+    position: absolute;
+    bottom: 0;
+}

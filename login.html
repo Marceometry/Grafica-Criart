@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <title>Gráfica Criart | Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfica Criart | Login</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="scripts/form.js"></script>
 </head>
 <body>
-    <h1>Massa</h1>
+    <header>
+        <a href="index.html">
+            <img src="images/criart.png" alt="">
+        </a>
+    </header>
+
+    <main>
+        <form method="post">
+            <h1> Cadastre-se: </h1>
+
+            <fieldset>
+                <label for="cpf">CPF:</label>
+                <input id="cpf" name="cpf" type="text" placeholder="Ex: 123.456.789-00" required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Nome completo" required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text" placeholder="seuemail@gmail.com" required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="senha">Senha:</label>
+                <input id="senha" name="senha" type="text" required>
+            </fieldset>
+            
+            <fieldset>
+                <label for="senha2">Confirmar senha:</label>
+                <input id="senha2" name="senha2" type="text" required>
+            </fieldset>
+
+            <button type="button" onclick="validateLoginForm(this.form)"> Enviar </button>
+        </form>
+    </main>
+
+    <footer class="loginPageFooter">
+        <p> <img src="images/copyright.svg" alt="C"> Copyright 2021</p>
+        <p>Feito com <img src="images/heart.svg" alt="<3"> por <a href="https://github.com/Marceometry">Marcelino Teixeira</a> e Júlia Martins</p>
+    </footer>
 </body>
 </html>
