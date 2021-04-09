@@ -71,3 +71,19 @@ main h1 {
 main hr {
     border: 1px solid #202020;
 }
+
+footer {
+    width: 100%;
+    padding: 32px;
+    border-top: 1px solid black;
+    background: #eead94;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 16px;
+    transform: translateY(2px);
+}
