@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     background: linear-gradient(140deg, #ffffe2 0, #fff7da 12.5%,
     #ffeacd 25%, #ffd9bc 37.5%, #fbc3a7 50%, #eead94 62.5%, 
     #e59c87 75%, #de8f7f 87.5%, #da867d 100%) no-repeat;
@@ -60,7 +59,7 @@ header ul li:hover {
 
 main {
     width: 50%;
-    margin: 48px auto;
+    margin: 32px auto;
     text-align: justify;
 }
 

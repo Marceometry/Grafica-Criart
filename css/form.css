@@ -1,0 +1,33 @@
+form {
+    width: 70%;
+    padding: 32px;
+    margin: 32px auto;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #fbc3a7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 24px;
+}
+
+fieldset:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    width: 130px;
+}
+
+input, textarea, select {
+    padding: 5px;
+    border: 1px solid black;
+    background: #ffd9bc;
+}
