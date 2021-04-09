@@ -18,10 +18,6 @@ fieldset {
     margin-bottom: 24px;
 }
 
-fieldset:last-child {
-    margin-bottom: 0;
-}
-
 label {
     width: 130px;
 }
@@ -29,5 +25,18 @@ label {
 input, textarea, select {
     padding: 5px;
     border: 1px solid black;
+    background: #ffd9bc;
+}
+
+button {
+    padding: 16px 32px;
+    color: #fff;
+    background: #de8f7f;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+button:hover {
+    color: #000;
     background: #ffd9bc;
 }
