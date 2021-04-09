@@ -1,4 +1,4 @@
-function validateForm(form) {
+function validateForm() {
     const masc = document.getElementById('masc')
     const fem = document.getElementById('fem')
     const outro = document.getElementById('outro')
@@ -7,3 +7,5 @@ function validateForm(form) {
         alert('Por favor, escolha uma das opções de sexo.')
     }
 }
+
+function validaSenha() {}
