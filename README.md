@@ -1,3 +1,3 @@
-# Site da Gráifca Criart
+# Site da Gráfica Criart
 
 Site construído para um trabalho escolar
