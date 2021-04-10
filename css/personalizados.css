@@ -1,0 +1,19 @@
+section {
+    margin: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    width: 250px;
+}
+
+section img.productImg {
+    border: 3px solid black;
+}
+
+form ul li {
+    font-size: 20px;
+    margin-top: 10px 0;
+}
