@@ -78,6 +78,22 @@ main p:first-of-type {
     margin: 32px 80px 24px;
 }
 
+main .profile {
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+main .profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
 footer {
     width: 100%;
     padding: 32px;
